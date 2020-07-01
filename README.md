@@ -8,10 +8,15 @@ You can check this by running the command node -v
 
 The link can be found [here](https://nodejs.org/en/download/)
 
-To start the server, you can run the following commands: 
+To start the server, you need to install nodemon using the following command: 
 
 ```
-cd ~/Meal_Planner_COMP4560 && npm start
+cd ~/Meal_Planner_COMP4560 && npm install
+```
+You can then run the following command to start the server.
+
+```
+npm start
 ```
 
 You should get the following line running in your console:
