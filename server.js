@@ -1,26 +1,27 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const router = require('./router');
 const app = express();
-const PORT = 3000;
 
-mongoose.connect('mongodb://localhost:27017/testdb', {
-    useNewUrlParser: 'true'
+require('dotenv').config();
+
+const PORT = process.env.PORT;
+
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true });
+
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error: '));
+
+db.once('open', () => {
+    console.log('\n###### MONGO DB Connected ######\n')
 })
 
-mongoose.connection.on('error', err => {
-    console.log('err', err);
-})
-
-mongoose.connection.on('connected', (err,res) => {
-    console.log('mongoose is connected');
-})
-
-app.set('views', __dirname + '/public/views')
+app.set('views', __dirname + '/views')
 app.set("view engine", 'ejs');
-app.use(express.static(__dirname + '/public'))
 
-app.get('/', (req, res) => {
-    res.render('pages/index');
-});
+app.use(express.static(__dirname + '/public'));
+
+router(app);
 
 app.listen(PORT, () => console.log(`Server started at http://localhost:${PORT}`));
