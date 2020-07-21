@@ -1,14 +1,9 @@
-
 const index = (req, res) => {
     res.render(`index`);
 };
 
 const community = (req, res) => {
     res.render(`community`);
-};
-
-const recipes = (req, res) => {
-    res.render(`recipes`);
 };
 
 const notFound = (req, res) => {
@@ -20,6 +15,5 @@ const notFound = (req, res) => {
 module.exports = {
     index: index,
     community: community,
-    recipes: recipes,
     notFound: notFound,
 };
