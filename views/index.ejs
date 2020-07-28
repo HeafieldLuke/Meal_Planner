@@ -1,15 +1,129 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src ="javascript/scroll.js"></script>
+  </head>
+  <body>
+    <%- include('./partials/nav') %>
+    <div class ="background">
+      <div class ="box"></div>
+      <div>
+        <h1>A Simple Recipe Finder</h1>
+      
+        <p>Search and select a variety of high quality recipes gathered</p>
+        <p>from the internet and our users to get all the ingredients needed to create them!</p>
+        <br/>
+        <p>Get started Here:</p>
+        <div class ="search"><input type="text" placeholder="Search.."></div>
+      </div>
+        <div class="scrollable-container">
+          <button id="back" style="position: absolute; margin-top: 160px; margin-left: -55px;"><i class="material-icons">arrow_backward</i></button>
+          <div class = "scrollable" id="scrollable"> 
+            <ul>
 
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<title>Meal Planning App</title>
-		<link rel="stylesheet" type="text/css" href="styles/index.css" />
-	</head>
-	<body>
-		<%- include('./partials/nav') %>
-		<div>
-			<h1>Home</h1>
-		</div>
-	</body>
+              <li><div class="slide">
+                <article>
+                <img src="assets/pasta.jpg" alt="Spaghetti" id ="logo2">
+                <div class="text">
+                  <h3>Spaghetti</h3>
+                  <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
+                  <button>		
+                <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+                </button>
+                </div>
+                </article></div></li>
+          
+              <li><div class="slide">
+                <article>
+                  <img src="assets/salad.jpg" alt="Caesar salad" id="logo2">
+                  <div class="text">
+                    <h3>Caesar Salad</h3>
+                    <div class="text2"><p>Delicious, simple addition to any main course</p></div>
+                    <button>		
+                  <a href="https://en.wikipedia.org/wiki/Caesar_salad">View Recipe</a>
+                  </button>
+                  </div>
+                </article></div></li>
+                
+                <li><div class="slide">
+                  <article>
+                    <img src="assets/tacos.jpg" alt="Tacos" id="logo2">
+                    <div class="text">
+                      <h3>Tacos</h3>
+                      <div class="text2"><p>Carnitas tacos with fresh toppings and crispy tortillas</p></div>
+                      <button>
+                    <a href="https://en.wikipedia.org/wiki/Taco">View Recipe</a>
+                    </button>
+                    </div>
+                  </article></div></li>
+
+              <li><div class="slide">
+                <article>
+                <img src="assets/pasta.jpg" alt="Spaghetti" id ="logo2">
+                <div class="text">
+                  <h3>Spaghetti</h3>
+                  <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
+                  <button>		
+                <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+                </button>
+                </div>
+                </article></div></li>
+
+              <li><div class="slide">
+                <article>
+                <img src="assets/pasta.jpg" alt="Spaghetti" id ="logo2">
+                <div class="text">
+                  <h3>Spaghetti</h3>
+                  <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
+                  <button>		
+                <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+                </button>
+                </div>
+                </article></div></li>
+
+              <li><div class="slide">
+                <article>
+                <img src="assets/pasta.jpg" alt="Spaghetti" id ="logo2">
+                <div class="text">
+                  <h3>Spaghetti</h3>
+                  <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
+                  <button>		
+                <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+                </button>
+                </div>
+                </article></div></li>
+
+                <li><div class="slide">
+                  <article>
+                  <img src="assets/pasta.jpg" alt="Spaghetti" id ="logo2">
+                  <div class="text">
+                    <h3>Spaghetti</h3>
+                    <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
+                    <button>		
+                  <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+                  </button>
+                  </div>
+                  </article></div></li>
+
+                  <li><div class="slide">
+                    <article>
+                    <img src="assets/pasta.jpg" alt="Spaghetti" id ="logo2">
+                    <div class="text">
+                      <h3>Spaghetti</h3>
+                      <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
+                      <button>		
+                    <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+                    </button>
+                    </div>
+                    </article></div></li>
+            </ul>
+            </div>
+          <button id="forward" style="position: absolute; margin-top: 160px;"><i class="material-icons">arrow_forward</i></button>
+        </div>
+     
+  </body>
 </html>
