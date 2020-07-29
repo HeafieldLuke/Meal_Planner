@@ -1,7 +1,12 @@
 const Recipe = require('../models/recipe')
 
 const findRecipes = (req, res) => {
-    res.render(`recipes`);
+    Recipe.find({}).then(recipes => {
+        console.log(recipes)
+        console.log(recipes[0].ingredients)
+        res.render(`recipes`, { recipes: recipes});
+    })
+    
 };
 
 const createRecipe = (req, res) => {
