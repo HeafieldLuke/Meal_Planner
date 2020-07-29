@@ -1,0 +1,87 @@
+<script type='text/javascript'>
+
+		var i = 0;
+		var j = 0;
+		
+        function addIngredient(){
+			i = i + 1;
+            // <div> destination of element
+            var container = document.getElementById("ingredients");
+			// appends text label
+            container.appendChild(document.createTextNode("Ingredient " + i + " "));
+            // creates input field with type and name
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "ingredient" + i;
+			// appends field
+            container.appendChild(input);
+             
+            
+        }
+		function addIngredientAmount(){
+			
+			var container = document.getElementById("ingredients");
+			
+            container.appendChild(document.createTextNode(" Amount "));
+            
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "amount" + i;
+			
+            container.appendChild(input);
+		}
+		function addIngredientMeasurement(){
+			
+			// options
+			var values = ["N/A","tsp","tbsp","cups","ounces"];
+			var container = document.getElementById("ingredients");
+			
+            container.appendChild(document.createTextNode(" Measurement "));
+            
+            var input = document.createElement("select");
+			
+            input.name = "measurement" + i;
+			
+			// for loop to fill select menu with options
+			for(const val of values){
+				var option = document.createElement("option");
+				option.value = val;
+				option.text = val.charAt(0).toUpperCase() + val.slice(1);
+				input.appendChild(option);
+			}
+            container.appendChild(input);
+			// line break
+			container.appendChild(document.createElement("br"));
+		}
+		function addStep(){
+			j = j + 1;
+			var container = document.getElementById("steps");
+			
+            container.appendChild(document.createTextNode("Step " + j + " "));
+            
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "step" + i;
+			
+            container.appendChild(input);
+			container.appendChild(document.createElement("br"));
+		}
+</script>
+
+<form>
+  <label for="recipeName">Name of Recipe</label><br>
+  <input type="text" id="recipeName"><br>
+</form> 
+
+<!-- Generates a text field for an Ingredient on click -->
+<button type="button" onclick="addIngredient();addIngredientAmount();addIngredientMeasurement()">Add Ingredient</button>
+<div id="ingredients">
+</div>
+
+<button type="button" onclick="addStep()">Add Step</button>
+<div id="steps">
+</div>
+
+<button type="button">Submit</button>
+
+
