@@ -1,0 +1,45 @@
+body{
+	background-image: url('../assets/Food2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover,cover;
+  }
+  
+  .center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: white;
+	width: 30%;
+	padding: 10px;
+	top: 50%;
+	left:  50%; 
+	border-radius: 5px;
+  }
+  
+  h1{
+	margin: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+  }
+  
+  
+  .submission{
+	background-color: #09C269;
+	color: black;
+	padding: 14px 14px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 0px;
+  }
+  
+  input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+  }

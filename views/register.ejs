@@ -1,0 +1,36 @@
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/login.css">
+    <style>
+  h1{
+    margin: auto;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+  }
+  
+    </style>
+  </head>
+  <body>
+  <div class="center">
+  <div class="login">
+  <h1>Register</h1>
+  <form action="/register" method="Post">
+      <div>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+      </div>
+      <div>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div>
+          <input type="text" id="password" name="password" placeholder="Password" required>
+      </div>
+      <div>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+      </div>
+      <div><button type="submit" class="submission">Register</button></div>
+  </form>
+          <a href="/login" class="btn btn-primary" style="background-color: #09C269; border: none; color:black; width: 100%; padding: 14px 14px; border-radius: 0px;">Back to login</a>
+      </div>
+  </div>
+  </body>

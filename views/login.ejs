@@ -1,0 +1,41 @@
+
+	
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles/login.css">
+  </head>
+  <body>
+    <div class="center">
+      <div class="login">
+		<h1>Sign In</h1>
+		<% if (messages.error) { %>
+			<%= messages.error %>
+		
+		<% } %>
+        <div class="login-container">
+
+          <form action="/login" method="POST">
+            <div class="Username"></div>
+              <input type="text" placeholder="Username" name="username">
+            </div>
+
+            <div class = "Password">
+              <input type="password" id= "paswd" placeholder="Password" name="password">
+            </div>
+
+            
+            <div><button type="submit" class="submission">Login</button></div>
+          </form>
+          
+          <form action="/register">
+            <button class= "submission" type="submit" value="submit">Create Account</button>
+          </form>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

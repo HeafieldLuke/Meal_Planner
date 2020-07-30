@@ -1,5 +1,5 @@
 const index = (req, res) => {
-    res.render(`index`);
+    res.render(`index`, { name: req.user.name });
 };
 
 const community = (req, res) => {
