@@ -1,16 +1,17 @@
 
 <ul>
-    <div class = "scrollable">
+    <div class = "scrollable" style="margin-top: 10px">
       <li><div class="slide">
         <article>
         <img src="assets/pasta.jpg" alt=<%= title %> id ="logo2">
         <div class="text">
           <h3> <%= title %></h3>
           <div class="text2"><p>Fast and easy spaghetti with tomato sauce for weeknight dinners</p></div>
-          <button>		
-        <a href="https://en.wikipedia.org/wiki/Spaghetti">View Recipe</a>
+          <button data-toggle="modal" data-target="#myModal">		
+        <a>View</a>
         </button>
         </div>
         </article></div></li>
+        <%- include('./modal') %>
       </div>
  </ul>

@@ -26,6 +26,7 @@ const router = (app) => {
     app.delete('/recipes', recipes.remove);
 
     app.get('/plan', plan.index);
+    app.post('/plan', plan.generate);
 };
 
 module.exports = router;

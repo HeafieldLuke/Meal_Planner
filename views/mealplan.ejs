@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/card.css">
+</head>
+<%- include('./partials/nav') %>
+<table border="1" style="margin-top: 20px">
+    
+    <tr>
+        <td>Monday</td>
+        <td><%- include('./partials/card', { title: plan['Monday'].name }) %></td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td><%- include('./partials/card', { title: plan['Tuesday'].name }) %></td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td><%- include('./partials/card', { title: plan['Wednesday'].name }) %></td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td><%- include('./partials/card', { title: plan['Thursday'].name }) %></td>
+    </tr>
+    <tr>
+        <td>Friday</td>
+        <td><%- include('./partials/card', { title: plan['Friday'].name }) %></td>
+    </tr>  
+    <tr>
+        <th>Saturday</th>
+        <td><%- include('./partials/card', { title: plan['Saturday'].name }) %></td>
+    </tr>   
+    <tr>
+        <th>Sunday</th>
+        <td><%- include('./partials/card', { title: plan['Sunday'].name }) %></td>
+    </tr> 
+     
+</table>

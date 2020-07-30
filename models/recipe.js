@@ -14,6 +14,7 @@ const directionSchema = mongoose.Schema({
 const recipeSchema = mongoose.Schema({
     id: { type: String, default: v4},
     name: String,
+    description: String,
     image_url: String,
     ingredients: [ingredientSchema],
     directions: [directionSchema]

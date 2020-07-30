@@ -3,7 +3,7 @@ const index = (req, res) => {
 };
 
 const community = (req, res) => {
-    res.render(`community`);
+    res.render(`form`);
 };
 
 const notFound = (req, res) => {

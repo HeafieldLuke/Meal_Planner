@@ -10,31 +10,15 @@
 	<body>
 		<%- include('./partials/nav') %>
 		<div class="container">
-			<div class="row">
-			  <div class="col-sm">
-				<%- include('./partials/card', { title: 'cats'}) %>
-			  </div>
-			  <div class="col-sm">
-				<%- include('./partials/card', { title: 'spaghetti'}) %>
-			  </div>
-			  <div class="col-sm">
-				<%- include('./partials/card', { title: 'spaghetti'}) %>
-			  </div>
-			</div>
-		  </div>
-		  <div class="container">
-			<div class="row">
-			  <div class="col-sm">
-				<%- include('./partials/card', { title: 'spaghetti'}) %>
-			  </div>
-			  <div class="col-sm">
-				<%- include('./partials/card', { title: 'spaghetti'}) %>
-			  </div>
-			  <div class="col-sm">
-				<%- include('./partials/card', { title: 'spaghetti'}) %>
-			  </div>
-			</div>
-		  </div>
-		  
+			<% recipes.forEach(recipeGroup => { %>
+				<div class="row">
+					<% recipeGroup.map(recipe => { %>
+						<div class="col-sm">
+							<%- include('./partials/card', { title: recipe.name}) %>
+						</div>
+					<%})%>
+				</div>
+			<%})%>
+		</div>
 	</body>
 </html>

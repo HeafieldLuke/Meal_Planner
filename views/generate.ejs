@@ -14,11 +14,15 @@
       var Saturday = document.getElementById("Saturday");
       var Sunday = document.getElementById("Sunday");
       var days = [Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday];
-      for(i= 0;i<=6;i++){
-        x = Math.floor(Math.random() * 4);
+      days.map(day => console.log(day.value))
+      for(var i=  0;i<=6;i++){
+        x = Math.floor(Math.random() * 1);
         days[i].value= days[i].options[x].text;
       }
+
+      document.getElementsByTagName('form')[0].submit()
     }
+
 </script>
 <%- include('./partials/nav') %>
 <div class="background">
@@ -31,77 +35,14 @@
     <p style="text-align: center;"> Or</p>
     <p style="text-align: center;">Create your own weekly meal plan!</p>
 
-    <form action="/action_page.php">
-      <label for="Monday">Choose a meal for Monday:</label>
-      <select id="Monday" name="Monday">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
-      <label for="Tuesday">Choose a meal for Tuesday:</label>
-      <select id="Tuesday" name="cars">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
-      <label for="Wednesday">Choose a meal for Wednesday:</label>
-      <select id="Wednesday" name="Wednesday">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
-      <label for="Thursday">Choose a meal for Thurday:</label>
-      <select id="Thursday" name="Thursday">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
-      <label for="Friday">Choose a meal for Friday:</label>
-      <select id="Friday" name="Friday">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
-      <label for="Saturday">Choose a meal for Saturday:</label>
-      <select id="Saturday" name="Saturday">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
-      <label for="Sunday">Choose a meal for Sunday:</label>
-      <select id="Sunday" name="Sunday">
-        <div class= "meals">
-          <option value="Burger">Burger</option>
-          <option value="Salad">Salad</option>
-          <option value="Cookie">Cookie</option>
-          <option value="Mango">Mango</option>
-        </div>
-      </select>
-      <br/>
+    <form action="/plan" method="POST">
+      <%- include('./partials/selectDay', { day: 'Monday', recipes: recipes}) %>
+      <%- include('./partials/selectDay', { day: 'Tuesday', recipes: recipes}) %>
+      <%- include('./partials/selectDay', { day: 'Wednesday', recipes: recipes}) %>
+      <%- include('./partials/selectDay', { day: 'Thursday', recipes: recipes}) %>
+      <%- include('./partials/selectDay', { day: 'Friday', recipes: recipes}) %>
+      <%- include('./partials/selectDay', { day: 'Saturday', recipes: recipes}) %>
+      <%- include('./partials/selectDay', { day: 'Sunday', recipes: recipes}) %>
       <input type="submit" class="submit">
     </form>
     

@@ -1,0 +1,137 @@
+.top_bar{
+  background-color: #09C269;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.top_bar a{
+  float: left;
+  color:black;
+  padding: 14px 16px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  display: inline;
+}
+
+.top_bar img{
+  width: 50px;
+  height: 50px;
+}
+
+#logo{
+  float:left;
+}
+  
+
+.background{
+  background-image: url(../assets/Food2.jpg);
+  position: absolute;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  min-height: 737px;
+  
+}
+
+.scrollable{
+    width:375px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    max-height: 400px;
+    margin-top: -30px;
+    text-align: center;
+  }
+  
+  .scrollable p{
+    width: 300px;
+  }
+  
+  .scrollable ul{
+    margin:0; 
+    padding:0;
+    display:table;
+    text-align: center;
+  }
+  
+  .scrollable li{
+    padding:10px 10px;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+  }
+  
+  .slide{
+    width:300px;
+  }
+  
+  .slide #logo{
+    height: 200px;
+    width: 250px;
+    border:0;
+    display:block;
+    margin:0px auto;
+  }
+  
+  a:link {
+    color:black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+    
+  article {
+    margin:0px auto;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: white;
+    width: 303px;
+    text-align: center;
+  }
+  
+  .text {
+    word-wrap:break-word;
+    padding: 0px 20px 20px;
+    max-width: 300px;
+    text-align: center;
+    
+  }
+  .text p{
+    word-wrap:break-word;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .text > button {
+    background: orange;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    }
+  
+  #logo2{
+  
+    height: 200px;
+    width: 301px;
+  }
+  
+  .text2{
+    margin-left:-15px;
+    width:inherit;
+    white-space: pre-wrap;
+  }
