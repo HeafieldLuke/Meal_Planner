@@ -1,0 +1,72 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: white;
+    width: 30%;
+    padding: 10px;
+    top: 50%;
+    left:  50%; 
+    margin-bottom: 30px;
+  }
+  
+  .top_bar{
+    background-color: #09C269;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  }
+  
+  .top_bar a{
+    float: left;
+    color:black;
+    padding: 14px 16px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: inline;
+  }
+  
+  .top_bar img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  #logo{
+    float:left;
+  }
+  
+  .background{
+    background-image: url(../assets/Food2.jpg);
+    position: absolute;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    min-height: 777px;
+    
+  }
+  
+  body{
+    margin:0px;
+  }
+  
+  button{
+    background-color: #09C269;
+    color: black;
+    padding: 14px 14px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/generate.css">
+  </head>
+<body>
+<script type='text/javascript'>
+    function createRandom(){
+      var Monday = document.getElementById("Monday");
+      var Tuesday = document.getElementById("Tuesday");
+      var Wednesday = document.getElementById("Wednesday");
+      var Thursday = document.getElementById("Thursday");
+      var Friday = document.getElementById("Friday");
+      var Saturday = document.getElementById("Saturday");
+      var Sunday = document.getElementById("Sunday");
+      var days = [Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday];
+      for(i= 0;i<=6;i++){
+        x = Math.floor(Math.random() * 4);
+        days[i].value= days[i].options[x].text;
+      }
+    }
+</script>
+<%- include('./partials/nav') %>
+<div class="background">
+  <div class= "center">
+    <h1 style="text-align: center;">Meal Planner</h1>
+
+    
+    <button onclick="createRandom();">Generate A Random Plan</button>
+    <br/>
+    <p style="text-align: center;"> Or</p>
+    <p style="text-align: center;">Create your own weekly meal plan!</p>
+
+    <form action="/action_page.php">
+      <label for="Monday">Choose a meal for Monday:</label>
+      <select id="Monday" name="Monday">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <label for="Tuesday">Choose a meal for Tuesday:</label>
+      <select id="Tuesday" name="cars">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <label for="Wednesday">Choose a meal for Wednesday:</label>
+      <select id="Wednesday" name="Wednesday">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <label for="Thursday">Choose a meal for Thurday:</label>
+      <select id="Thursday" name="Thursday">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <label for="Friday">Choose a meal for Friday:</label>
+      <select id="Friday" name="Friday">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <label for="Saturday">Choose a meal for Saturday:</label>
+      <select id="Saturday" name="Saturday">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <label for="Sunday">Choose a meal for Sunday:</label>
+      <select id="Sunday" name="Sunday">
+        <div class= "meals">
+          <option value="Burger">Burger</option>
+          <option value="Salad">Salad</option>
+          <option value="Cookie">Cookie</option>
+          <option value="Mango">Mango</option>
+        </div>
+      </select>
+      <br/>
+      <input type="submit" class="submit">
+    </form>
+    
+  </div>
+</div>
+</body>
+</html>
