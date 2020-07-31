@@ -21,11 +21,12 @@ const router = (app) => {
     app.post('/register', auth.createUser)
 
     app.get('/recipes', recipes.find);
-    app.post('/recipes', auth.checkAuthenticated, recipes.create);
+    app.post('/recipes', recipes.create);
     app.put('/recipes', recipes.update);
     app.delete('/recipes', recipes.remove);
 
     app.get('/plan', plan.index);
+    app.post('/plan', plan.generate);
 };
 
 module.exports = router;

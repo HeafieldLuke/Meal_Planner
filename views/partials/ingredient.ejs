@@ -1,0 +1,5 @@
+<ul>
+    <% recipe.forEach(ingredient => { %>
+        <li><%- ingredient.name.append(ingredient.amount) %></li>
+    <% }) %>
+</ul>

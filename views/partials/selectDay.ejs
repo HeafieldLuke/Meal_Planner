@@ -1,0 +1,9 @@
+<label for=<%= day %>>Choose a meal for <%- day %>:</label>
+      <select id=<%= day %> name=<%= day %>>
+        <div class= "meals">
+          <%recipes.forEach(recipe => {%>
+            <option><%-recipe.name%></option>    
+            <%})%>
+        </div>
+      </select>
+      <br/>
