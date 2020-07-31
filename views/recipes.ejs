@@ -14,7 +14,7 @@
 				<div class="row">
 					<% recipeGroup.map(recipe => { %>
 						<div class="col-sm">
-							<%- include('./partials/card', { title: recipe.name}) %>
+							<%- include('./partials/card', { recipe: recipe}) %>
 						</div>
 					<%})%>
 				</div>

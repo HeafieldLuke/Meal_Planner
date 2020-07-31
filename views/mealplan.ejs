@@ -2,35 +2,29 @@
     <link rel="stylesheet" type="text/css" href="styles/card.css">
 </head>
 <%- include('./partials/nav') %>
-<table border="1" style="margin-top: 20px">
+<table border="1" style="margin-top: 20px; text-align: center; margin-left: auto; margin-right: auto; min-width: 600">
     
     <tr>
-        <td>Monday</td>
-        <td><%- include('./partials/card', { title: plan['Monday'].name }) %></td>
+        <td><h2>Monday</h2><%- include('./partials/card', { recipe: plan['Monday'] }) %></td>
     </tr>
     <tr>
-        <td>Tuesday</td>
-        <td><%- include('./partials/card', { title: plan['Tuesday'].name }) %></td>
+        <td><h2>Tuesday</h2><%- include('./partials/card', { recipe: plan['Tuesday'] }) %></td>
     </tr>
     <tr>
-        <td>Wednesday</td>
-        <td><%- include('./partials/card', { title: plan['Wednesday'].name }) %></td>
+        
+        <td><h2>Wednesday</h2><%- include('./partials/card', { recipe: plan['Wednesday'] }) %></td>
     </tr>
     <tr>
-        <td>Thursday</td>
-        <td><%- include('./partials/card', { title: plan['Thursday'].name }) %></td>
+        <td><h2>Thursday</h2><%- include('./partials/card', { recipe: plan['Thursday'] }) %></td>
     </tr>
     <tr>
-        <td>Friday</td>
-        <td><%- include('./partials/card', { title: plan['Friday'].name }) %></td>
+        <td><h2>Friday</h2><%- include('./partials/card', { recipe: plan['Friday'] }) %></td>
     </tr>  
     <tr>
-        <th>Saturday</th>
-        <td><%- include('./partials/card', { title: plan['Saturday'].name }) %></td>
+        <td><h2>Saturday</h2><%- include('./partials/card', { recipe: plan['Saturday'] }) %></td>
     </tr>   
     <tr>
-        <th>Sunday</th>
-        <td><%- include('./partials/card', { title: plan['Sunday'].name }) %></td>
+        <td><h2>Sunday</h2><%- include('./partials/card', { recipe: plan['Sunday'] }) %></td>
     </tr> 
      
 </table>

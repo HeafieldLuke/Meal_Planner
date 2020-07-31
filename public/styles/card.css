@@ -23,11 +23,11 @@
 }
   
 
-.background{
+body{
   background-image: url(../assets/Food2.jpg);
   position: absolute;
   z-index: 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -134,4 +134,12 @@
     margin-left:-15px;
     width:inherit;
     white-space: pre-wrap;
+  }
+
+  tr {
+    background-color: #e9c46a;
+  }
+
+  h2 {
+    color: white;
   }
