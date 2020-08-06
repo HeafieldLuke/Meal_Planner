@@ -1,4 +1,11 @@
-# Meal_Planner_COMP4650
+# Meal_Planner
+
+## Motivation
+
+As a college student, planning weekly meals can be a challenge on top of
+all of the schoolwork and extra-curriculars. Compiling a shopping list
+can be even more time-consuming. This project aims to build a website for
+people to share recipes, and allow users to generate a meal plan and shopping list with these recipes.
 
 ## Getting Started Instructions
 
@@ -16,10 +23,9 @@ Before you can begin running the project, you must create a .env file in the roo
 
 ```
 PORT=8080
-MONGO_URL="mongodb+srv://COMP4560-User:yOA4QFdGpfcomWvy@comp-4650-final.n52rt.mongodb.net/MealPlanner?retryWrites=true&w=majority"
 ```
 
-This should give you read and write access to the database and therefore should work properly.
+You also need to get database access. Since I am making this public I will not be including this line.
 
 ### Running the project
 
