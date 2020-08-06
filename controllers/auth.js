@@ -31,29 +31,7 @@ const createUser = async (req, res) => {
     }
 } 
 
-const getUserByEmail = (email) => {
-    User.findOne({ email: email }, (err,docs) => {
-        if (docs) {
-            console.log(docs)
-            return docs;
-        } else {
-            console.log(err)
-        }
-    })
-}
-
-const getUserById = (id) => {
-    User.findById(id, (err,docs) => {
-        if (docs) {
-            return docs
-        } else {
-            console.log(err);
-        }
-    })
-}
-
 const checkAuthenticated = (req, res, next) => {
-    console.log('here')
     if (req.isAuthenticated()) {
         return next();
     }
@@ -73,6 +51,4 @@ module.exports = {
     createUser: createUser,
     checkAuthenticated: checkAuthenticated,
     checkNotAuthenticated: checkNotAuthenticated,
-    getUserByEmail: getUserByEmail,
-    getUserById: getUserById
 }
