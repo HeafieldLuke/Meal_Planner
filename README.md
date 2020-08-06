@@ -1,7 +1,5 @@
 # Meal_Planner
 
-## Motivation
-
 As a college student, planning weekly meals can be a challenge on top of
 all of the schoolwork and extra-curriculars. Compiling a shopping list
 can be even more time-consuming. This project aims to build a website for
