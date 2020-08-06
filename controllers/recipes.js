@@ -11,19 +11,15 @@ const findRecipes = (req, res) => {
             // Do something if you want with the group
             tempArray.push(myChunk);
         }
-        console.log(tempArray)
         return tempArray;
     }
     Recipe.find({}).then(recipes => {
-        console.log(recipes)
-        console.log(recipes[0].ingredients)
         res.render(`recipes`, { recipes: chunkArray(recipes, 3)});
     })
     
 };
 
 const createRecipe = (req, res) => {
-    console.log(req.body)
     const newRecipe = new Recipe(req.body);
     newRecipe.save(err => {
         if (err) {
